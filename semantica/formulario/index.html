@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos de Acessibilidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../diagnostic.css">
+
+</head>
+
+<body>
+    <main class="container mx-auto py-5">
+        <header class=" col-12 col-md-6 text-center row mx-auto my-5">
+            <img src="danone.jpg" style="width: 150px" class="d-block mx-auto img-fluid" alt="logo da danone">
+            <h1 class="fw-bold my-4 fs-2 text-uppercase">
+                Levantamento das Necessidades de Trainamentos - LNT
+            </h1>
+            <p class="lead mb-0">Documento relacionaqndo: PL-RH-005</p>
+        </header>
+        <div class=" col-12 col-md-6 mx-auto">
+            <fieldset class="">
+                <Legend>Identificação</Legend>
+                <div class="mb-3 row">
+                    <label for="inputArea" class="col-sm-2 col-form-label">Área</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="inputArea" aria-label="Seleção das áreas">
+                            <option selected>Selecione uma opção</option>
+                            <option value="1">Área 1</option>
+                            <option value="2">Área 2</option>
+                            <option value="3">Área 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="mb-3 row">
+                            <label for="inputFuncao" class="col-sm-3 col-form-label">Função</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputFuncao">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="mb-3 row">
+                            <label for="inputFuncao" class="col-sm-4 col-form-label">Ano</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="w-100 form-control" id="inputFuncao">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="inputModalidade" class="col-sm-2 col-form-label">Modalidade</label>
+                    <div class="col-sm-10 pt-2">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckSeguranca"><label class="form-check-label" for="flexCheckSeguranca">Segurança do Trabalho</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckInformatica"><label class="form-check-label" for="flexCheckInformatica">Informática</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckConhecimento"><label class="form-check-label" for="flexCheckConhecimento">Conhecimento Técnico</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckTreinamento"><label class="form-check-label" for="flexCheckTreinamento">Treinamento Operaciona</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckConhecimento"><label class="form-check-label" for="flexCheckConhecimento">Conhecimento Gerencial</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDesenvolvimento"><label class="form-check-label" for="flexCheckDesenvolvimento">Desenvolvimento Humano</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckOutros"><label class="form-check-label" for="flexCheckOutros">Outros</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="my-5 py-5">
+                <legend>Justificativa</legend>
+
+
+                <div class="mb-5">
+                    <label for="FormControlCursoDescricao" class="form-label">Descriçãoo do Curso</label>
+                    <textarea class="form-control" id="FormControlCursoDescricao" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="FormControlCursoImportancia" class="form-label">Qual a importância desse curso para o
+                        desenvolvimento do Colaborador?</label>
+                    <textarea class="form-control" id="FormControlCursoImportancia" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="FormControlCursoJustificativa" class="form-label">O que o levou a escolher estes
+                        cursos?</label>
+                    <textarea class="form-control" id="FormControlCursoJustificativa" rows="3"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="">
+                <legend>Aprovação</legend>
+                <div class="row">
+                    <div class="col-8 fs-6 mt-2 mb-1">Aprovação da Liderança do Departamento</div>
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="FormControlDataLideranca" class="form-label">Data</label>
+                        <input type="date" class="form-control" id="FormControlDataLideranca" />
+                    </div>
+
+                </div>
+
+                <div class="my-5 py-5">
+                    <hr class="w-100">
+                    <p class="text-center mb-0">
+                        Visto
+                    </p>
+                </div>
+
+
+                <div class="py-2"></div>
+
+                <div class="row">
+                    <div class="col-8 fs-6 mt-2 mb-1">Aprovação do Departamento de RH</div>
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="FormControlDataRH" class="form-label">Data</label>
+                        <input type="date" class="form-control" id="FormControlDataRH" />
+                    </div>
+
+                </div>
+
+                <div class="my-5 py-5">
+                    <hr class="w-100">
+                    <p class="text-center mb-0">
+                        Visto
+                    </p>
+                </div>
+
+
+
+
+            </fieldset>
+
+        </div>
+    </main>
+</body>
+
+</html>
